@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>לוח בקרה למערכת</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="admin-wrapper">
+        <header class="main-header">
+            <h1>מערכת ניהול</h1>
+        </header>
+
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">סקירה כללית</a></li>
+                    <li><a href="#">משתמשים</a></li>
+                    <li><a href="#">הגדרות</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <h2>לוח בקרה - הגדרות מערכת</h2>
+
+            <section class="stats-grid">
+                <div class="card">מכירות: ₪12,000</div>
+                <div class="card">משתמשים: 450</div>
+                <div class="stat-card">הודעות: 8</div>
+            </section>
+
+            <section class="form-section">
+                <h3>עדכון פרופיל מנהל</h3>
+                <form action="#" method="post" class="advanced-form">
+
+                    <div class="form-group">
+                        <label for="full-name">שם מלא:</label>
+                        <input type="text" id="full-name" name="full-name" required placeholder="הכנס שם מלא">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-email">כתובת אימייל:</label>
+                        <input type="email" id="user-email" name="user-email" required placeholder="example@domain.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">תפקיד במערכת:</label>
+                        <select id="role" name="role">
+                            <option value="admin">מנהל </option>
+                            <option value="editor">עורך תוכן</option>
+                            <option value="viewer">צופה בלבד</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birth-date">תאריך לידה:</label>
+                        <input type="date" id="birth-date" name="birth-date">
+                    </div>
+
+                    <div class="form-group">
+                        <p>קבלת התראות:</p>
+                        <label class="radio-label">
+                            <input type="radio" name="notifications" value="yes" checked> כן
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="notifications" value="no"> לא
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">עדכן נתונים</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 כל הזכויות שמורות</p>
+        </footer>
+    </div>
+</body>
+
+</html>
